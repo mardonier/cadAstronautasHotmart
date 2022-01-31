@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cadastro de Astronautas</title>
+</head>
+<body>
+    <h2>Cadastro da liga dos Astronautas</h2>
+    <form><h4>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nane" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required> -         
+        <label for="senha">Password: </label> <input type="password" id="psw" required><br><br>
+
+        <label for="date">Data de nasciamento:</label>
+        <input type="date" name="dateNascimento"> - Foto: <input type="file" name="myFoto"><br><br>
+        
+        <label for="f">Nascionalidade: </label>
+        <input list="nacional">
+        <datalist id="nacional">
+            <option value="Brasileira">
+            <option value="Americana">
+            <option value="Russa">           
+        </datalist>
+
+        <label for="gender">Gênero: </label>
+        <input type="radio" name="gender" value = "Masculino"> M
+        <input type="radio" name="gender" value = "Feminino">F<br><br>
+
+        <label for="qualityMain">Suas principais qualidades: </label>
+
+        <input type="checkbox" name="quality1" value="Inteligência">Inteligência  
+        <input type="checkbox" name="quality2" value="Resiliência">Resiliência 
+        <input type="checkbox" name="quality3" value="Preparo_físico">Preparo Físico 
+        <input type="checkbox" name="quality4" value="education">Educação<br><br> 
+        
+        <div><textarea id="textarea" name="textarea" rows="10" cols="30" placeholder="Porque você gostaria de ser um austronauta?"></textarea></div> 
+        <br>
+        <input type="submit" value="Criar">
+                  
+    </h4>
+    </form>
+ 
+</body>
+</html>
